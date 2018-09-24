@@ -1,11 +1,12 @@
 <div class="row">
   <div class="col-xs-8 col-sm-10 col-md-10">
-    <h1><%= title %></h1>
+    <h1>Mis Historias</h1>
   </div>
   <div class="col-xs-4 col-sm-2 col-md-2">
-    <%= link_to 'Nueva Historia', new_history_path, class: "btn btn-info btn-sm" %>
+    <%= link_to 'New History', new_history_path, class: "btn btn-info btn-sm" %>
   </div>
 </div>
+
 <div class="row">
   <% @histories.reverse.each do |history| %>
     <div class="col-sm-6 col-md-4">
@@ -21,4 +22,9 @@
     </div>
   <% end %>
 </div>
+
+
 <br>
+
+
+
